@@ -95,6 +95,26 @@ main{
 .user-state{
     color: var(--gray);
 }
+.new-chat{
+    text-align: center;
+    min-height: 9.375rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray);
+}
+.new-chat button{
+    background-color: var(--blue-bell);
+    border: 0;
+    color: var(--white);
+    flex-basis: 50%;
+    height: 3.75rem;
+    cursor: pointer;
+}
+.new-chat button:hover{
+    background-color: var(--soap);
+}
+.new-chat button:focus{
+   background-color: var(--gray);
+}
 .list-contacts{
     overflow-y: auto;
     overflow-x: hidden;
