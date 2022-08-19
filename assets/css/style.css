@@ -1,0 +1,135 @@
+:root{
+    --white:#FFFFFF;
+    --platinium:#E8EBE4;
+    --gray:#BEC1BB;
+    --blue-bell:#A491D2;
+    --soap:#CDC3E6;
+    --pale-lavander:#D4DCFF;
+    --dark-jungle:#1B1F21;
+    --outer-space:#444749;
+    --old-silver:#828485;
+}
+/*Genericos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Scroll*/
+::-webkit-scrollbar {
+    width: 0.438rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--platinium);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--soap);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-bell);
+}
+
+/*Fonts*/
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-x-small{
+    font-size: 0.625rem; /*10px*/
+}
+.font-small{
+    font-size: 0.875rem; /*14px*/
+}
+.font-medium{
+    font-size: 1rem; /*16px*/
+}
+.font-large{
+    font-size: 2.813rem; /*45px*/
+}
+
+/*Flex*/
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+/*Flex*/
+
+/*****/
+main{
+    min-height: 100vh;
+}
+.sidebar{
+    border-right: 0.063rem solid var(--gray);
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+.sidebar header{
+    background-color: var(--white);
+    border-bottom: 0.063rem solid var(--gray);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.sidebar header .material-icons{
+    margin-left: 1rem;
+}
+.user-state{
+    color: var(--gray);
+}
+.list-contacts{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 67px);
+}
+.sidebar header img,
+.contact img{
+    margin-right: 1rem;
+}
+.sidebar header,
+.contact{
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.contact{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.063rem solid var(--gray);
+}
+.contact:hover{
+    background-color: var(--pale-lavander);
+    border-bottom-color: transparent;
+}
+.contact-last-msg,
+.contact-name,
+.username{
+    width: 14vw;
+}
+.chat{
+    background-color: var(--platinium);
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+
+/*Utilities*/
+.rounded-circle {
+  border-radius: 50%;
+}
+.d-block{
+    display: block;
+}
+.text-truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
