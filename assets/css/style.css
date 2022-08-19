@@ -170,11 +170,7 @@ main{
     text-align: center;
     flex-basis: 40%;
 }
-.init-chat i{
-    padding: 2rem;
-    background-color: var(--blue-bell);
-    border-radius: 0.625rem;
-    color: var(--white);
+.init-chat img{
     margin-bottom: 1rem;
 }
 
