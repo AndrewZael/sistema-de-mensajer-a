@@ -76,9 +76,13 @@ main{
 }
 .sidebar{
     border-right: 0.063rem solid var(--gray);
-    flex-basis: 20%;
+    flex-basis: 100%;
     flex-grow: 1;
     overflow: hidden;
+    transition: flex-basis 0.3s ease-in-out;
+}
+.sidebar.off{
+    flex-basis: 0;
 }
 .sidebar header{
     background-color: var(--white);
@@ -109,6 +113,7 @@ main{
     flex-basis: 50%;
     height: 3.75rem;
     cursor: pointer;
+    padding: 0 1.5rem;
 }
 .new-chat button:hover{
     background-color: var(--soap);
@@ -141,12 +146,25 @@ main{
 }
 .contact-last-msg,
 .contact-name{
-    width: 14vw;
+    width: 70vw;
 }
 .chat{
     background-color: var(--gray-light);
-    flex-basis: 80%;
+    flex-basis: 0;
     flex-grow: 1;
+    overflow: hidden;
+    transition: flex-basis 0.5s ease;
+}
+.chat button{
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+.chat.on{
+    flex-basis: 100%;
 }
 .init-chat{
     text-align: center;
@@ -171,4 +189,45 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+/*responsive*/
+@media screen and (min-width:800px){
+    .sidebar{
+        flex-basis: 40%;
+    }
+    .chat{
+        flex-basis: 60%;
+    }
+    .chat button{
+        display: none;
+    }
+    .contact-last-msg, 
+    .contact-name{
+        width: 25vw;
+    }
+}
+@media screen and (min-width:1200px){
+    .sidebar{
+        flex-basis: 25%;
+    }
+    .chat{
+        flex-basis: 75%;
+    }
+    .contact-last-msg, 
+    .contact-name{
+        width: 17vw;
+    }
+}
+@media screen and (min-width:1600px){
+    .sidebar{
+        flex-basis: 20%;
+    }
+    .chat{
+        flex-basis: 80%;
+    }
+    .contact-last-msg, 
+    .contact-name{
+        width: 14vw;
+    }
 }

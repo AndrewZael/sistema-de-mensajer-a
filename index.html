@@ -12,7 +12,8 @@
 </head>
 <body>
     <main class="d-flex">
-        <div class="sidebar">
+        <section class="sidebar">
+
             <header class="d-flex justify-content-between">
                 <div class="d-flex align-items-center">
                     <img src="assets/img/user.jpg" alt="Alfonso Guzmán" width="50" height="50" class="rounded-circle" />
@@ -152,18 +153,39 @@
                 </article>
             </section>
 
-        </div>
-        <div class="chat d-flex align-items-center justify-content-center">
-            <section class="init-chat" title="Comienza el Networking">
+        </section>
+        <section class="chat d-flex align-items-center justify-content-center">
+            <button id="back">
+                <i class="fa-solid fa-arrow-left fa-2x"></i>
+            </button>
+            <article class="init-chat" title="Comienza el Networking">
                 <i class="fa-regular fa-handshake fa-10x"></i>
                 <h1 class="font-large">Comienza el Networking</h1>
                 <p>Presiona el botón <strong>“Nuevo chat”</strong> para comenzar a crear nuevas
                     redes de contacto para tu empresa o emprendimiento</p>
-            </section>
-        </div>
+            </article>
+        </section>
     </main>
 
     <script src="https://kit.fontawesome.com/782380a832.js" crossorigin="anonymous"></script>
+    <script>
+        if(window.innerWidth < 800) {
+            const sidebar = document.querySelector('.sidebar');
+            const chat = document.querySelector('.chat');
+            const contacts = document.querySelectorAll('.contact');
+            const back = document.querySelector('#back');
+            contacts.forEach((item, i) => {
+                item.addEventListener('click', (e) => {
+                    sidebar.classList.add('off');
+                    chat.classList.add('on');
+                });
+            });
+            back.addEventListener('click', (e) => {
+                sidebar.classList.remove('off');
+                chat.classList.remove('on');
+            });
+        }
+    </script>
 
 </body>
 </html>
