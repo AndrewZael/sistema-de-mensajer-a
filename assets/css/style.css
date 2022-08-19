@@ -78,6 +78,7 @@ main{
     border-right: 0.063rem solid var(--gray);
     flex-basis: 20%;
     flex-grow: 1;
+    overflow: hidden;
 }
 .sidebar header{
     background-color: var(--white);
@@ -139,8 +140,7 @@ main{
     border-bottom-color: transparent;
 }
 .contact-last-msg,
-.contact-name,
-.username{
+.contact-name{
     width: 14vw;
 }
 .chat{
