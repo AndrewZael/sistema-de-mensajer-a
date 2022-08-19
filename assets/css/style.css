@@ -2,6 +2,7 @@
     --white:#FFFFFF;
     --platinium:#E8EBE4;
     --gray:#BEC1BB;
+    --gray-light:#F8F8F8;
     --blue-bell:#A491D2;
     --soap:#CDC3E6;
     --pale-lavander:#D4DCFF;
@@ -14,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*Scroll*/
@@ -63,6 +65,9 @@
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-center{
+    justify-content: center;
+}
 /*Flex*/
 
 /*****/
@@ -81,8 +86,11 @@ main{
     top: 0;
     z-index: 1;
 }
-.sidebar header .material-icons{
+.sidebar header i{
     margin-left: 1rem;
+}
+.sidebar header i:hover{
+    color: var(--blue-bell);
 }
 .user-state{
     color: var(--gray);
@@ -116,9 +124,20 @@ main{
     width: 14vw;
 }
 .chat{
-    background-color: var(--platinium);
+    background-color: var(--gray-light);
     flex-basis: 80%;
     flex-grow: 1;
+}
+.init-chat{
+    text-align: center;
+    flex-basis: 40%;
+}
+.init-chat i{
+    padding: 2rem;
+    background-color: var(--blue-bell);
+    border-radius: 0.625rem;
+    color: var(--white);
+    margin-bottom: 1rem;
 }
 
 /*Utilities*/
