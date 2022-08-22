@@ -20,6 +20,10 @@
 html {
   font-size: 15px;
 }
+br{
+    display: none;
+}
+
 /*Scroll*/
 ::-webkit-scrollbar {
     width: 0.438rem;
@@ -210,6 +214,9 @@ main{
     }
 }
 @media screen and (min-width:1200px){
+    br{
+        display: block;
+    }
     .sidebar{
         flex-basis: 25%;
     }
