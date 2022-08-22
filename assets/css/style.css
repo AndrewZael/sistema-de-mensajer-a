@@ -177,6 +177,10 @@ main{
 .init-chat img{
     margin-bottom: 1rem;
     width: 300px;
+    height: auto;
+}
+.init-chat h1{
+    margin-bottom: 1rem;
 }
 /*Utilities*/
 .rounded-circle {
