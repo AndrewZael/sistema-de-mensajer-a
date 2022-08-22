@@ -113,10 +113,10 @@ main{
     background-color: var(--blue-bell);
     border: 0;
     color: var(--white);
-    flex-basis: 50%;
+    flex-basis: 200px;
     height: 3.75rem;
     cursor: pointer;
-    padding: 0 1.5rem;
+    white-space: nowrap;
 }
 .new-chat button:hover{
     background-color: var(--soap);
@@ -168,6 +168,7 @@ main{
 }
 .chat.on{
     flex-basis: 100%;
+    transform: translateZ(100vw);
 }
 .init-chat{
     text-align: center;
@@ -175,7 +176,7 @@ main{
 }
 .init-chat img{
     margin-bottom: 1rem;
-    width: 90%;
+    width: 300px;
 }
 /*Utilities*/
 .rounded-circle {
@@ -192,7 +193,7 @@ main{
 /*responsive*/
 @media screen and (min-width:575px){
     .init-chat img{
-        width: 65%;
+        width: 360px;
     }
 }
 @media screen and (min-width:800px){
@@ -210,7 +211,7 @@ main{
         width: 25vw;
     }
     .init-chat img{
-        width: 55%;
+        width: 380px;
     }
 }
 @media screen and (min-width:1200px){
