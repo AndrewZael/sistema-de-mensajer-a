@@ -103,6 +103,14 @@ main{
 .user-state{
     color: var(--gray);
 }
+.circle{
+    background-color: #009588;
+    display: inline-block;
+    margin-right: .35rem;
+    width: 0.438rem;
+    height: 0.438rem;
+    border-radius: 50rem;
+}
 .new-chat{
     text-align: center;
     min-height: 9.375rem;
