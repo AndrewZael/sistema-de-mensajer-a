@@ -23,7 +23,6 @@ html {
 br{
     display: none;
 }
-
 /*Scroll*/
 ::-webkit-scrollbar {
     width: 0.438rem;
@@ -38,12 +37,6 @@ br{
     background: var(--blue-bell);
 }
 /*Fonts*/
-.roboto{
-    font-family: 'Roboto', sans-serif;
-}
-.open-sans{
-    font-family: 'Open Sans', sans-serif;
-}
 .font-x-small{
     font-size: 0.625rem; /*10px*/
 }
@@ -73,7 +66,6 @@ br{
     justify-content: center;
 }
 /*Flex*/
-/*****/
 main{
     min-height: 100vh;
 }
@@ -109,7 +101,6 @@ main{
     margin-right: .35rem;
     width: 0.438rem;
     height: 0.438rem;
-    border-radius: 50rem;
 }
 .new-chat{
     text-align: center;
@@ -183,10 +174,10 @@ main{
     flex-basis: 85%;
 }
 .init-chat img{
-    margin-bottom: 1rem;
     width: 300px;
     height: auto;
 }
+.init-chat img,
 .init-chat h1{
     margin-bottom: 1rem;
 }
@@ -209,6 +200,9 @@ main{
     }
 }
 @media screen and (min-width:800px){
+    html{
+        font-size: 16px;
+    }
     .sidebar{
         flex-basis: 40%;
     }
